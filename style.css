@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #fff4b5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 20px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease-in;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #333;
+}
+
+.auth-options {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-options button {
+  background: transparent;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px;
+}
+
+.auth-options button:hover {
+  background: orange;
+}
+
+.main {
+  min-width: 700px;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 95%;
+}
+
+.main-head {
+  flex: 2 1 40rem;
+  text-align: center;
+}
+
+.main-head h1 {
+  padding-top: 50px;
+  font-size: 80px;
+}
+
+.main-head p {
+  padding: 10px 100px;
+  font-size: 20px;
+}
+
+.main-head button {
+  background: transparent;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px;
+}
+
+.main-head button:hover {
+  background: rgb(75, 195, 75);
+}
+
+.main-img{
+  flex: 1 1 40rem;
+  position: relative;
+  z-index: 1;
+}
+
+
+.image2{
+  position: absolute;
+  top: 10;
+  right: 40%;
+  z-index: 2;
+  width: 10%;
+  height: 10%;
+  transform: rotate(30deg); 
+}
+
+.image{
+  width: 50%;
+  height: 90%;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.icons ul{
+display: flex;
+gap: 20px;
+justify-content: space-between;
+align-items: center;
+}
+
+.fa-facebook,
+.fa-linkedin,
+.fa-twitter{
+  width: 50px;
+  height: 70px;
+}
